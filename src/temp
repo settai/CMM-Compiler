@@ -1,0 +1,14 @@
+int t[100];
+extern int affiche(int d);
+
+int calcul(int x,int y){
+	return(x*y);
+}
+
+int main(){
+	int i;
+	for (i=0; i<100; i=i+1){
+		t[i]=calcul(i,i+1);
+	}
+	affiche(t[i-1]);
+}
